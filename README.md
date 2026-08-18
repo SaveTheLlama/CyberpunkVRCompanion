@@ -2,9 +2,11 @@
 
 **Cyberpunk VR Companion** is a Windows companion application built to simplify launching, configuring, troubleshooting, and tuning a Cyberpunk 2077 VR setup.
 
+> **Unofficial community utility:** Cyberpunk VR Companion is not affiliated with, approved by, endorsed by, or sponsored by CD PROJEKT RED.
+
 ![Cyberpunk VR Companion](docs/images/logo_main.png)
 
-[Installation](INSTALLATION.md) · [User Guide](USER_GUIDE.md) · [Troubleshooting](TROUBLESHOOTING.md) · [Support](SUPPORT.md) · [Contributing](CONTRIBUTING.md)
+[Installation](INSTALLATION.md) · [User Guide](USER_GUIDE.md) · [Troubleshooting](TROUBLESHOOTING.md) · [Support](SUPPORT.md) · [Contributing](CONTRIBUTING.md) · [License](LICENSE.md)
 
 ## What it does
 
@@ -137,6 +139,14 @@ See [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 ## Privacy
 
 See [PRIVACY.md](PRIVACY.md).
+
+## License
+
+Cyberpunk VR Companion is distributed under the **[Cyberpunk VR Companion Proprietary License](LICENSE.md)**.
+
+Official, unmodified compiled releases may be downloaded and used at no charge. Reviews, tutorials, demonstrations, livestreams, screenshots, articles, and other coverage are permitted, including monetized media content. Repackaging, resale, mirroring, modified redistribution, or bundling of the Software is not permitted without prior written permission.
+
+The full application source is not part of the current public release. See [SOURCE_AVAILABILITY.md](SOURCE_AVAILABILITY.md).
 
 ## Release
 
