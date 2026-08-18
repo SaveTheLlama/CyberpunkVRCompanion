@@ -1,0 +1,108 @@
+name: Bug report
+description: Report a reproducible Cyberpunk VR Companion problem
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please run **Health** before filing a bug. If appropriate, create a sanitized Diagnostic Pack.
+        Do not upload saves, credentials, private screenshots, or unrelated personal files.
+
+  - type: input
+    id: version
+    attributes:
+      label: Companion version
+      placeholder: v1.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: cyberpunk_version
+    attributes:
+      label: Cyberpunk 2077 version
+      placeholder: Game version/build if known
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+    validations:
+      required: true
+
+  - type: input
+    id: hmd
+    attributes:
+      label: Headset
+    validations:
+      required: true
+
+  - type: input
+    id: runtime
+    attributes:
+      label: OpenXR runtime / PCVR connection
+      placeholder: VirtualDesktopXR, SteamVR, etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Where does the problem occur?
+      options:
+        - VR
+        - Flatscreen
+        - Both
+        - Companion only / before game launch
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the exact message or visible behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Please make these as specific as possible.
+      placeholder: |
+        1. Open Companion
+        2. Select ...
+        3. Click ...
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: health
+    attributes:
+      label: Health Check result
+      description: Summarize PASS/WARN/FAIL results or attach the sanitized Diagnostic Pack if appropriate.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs / Diagnostic Pack
+      description: Drag in sanitized files if useful. Review archives before posting them publicly.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing Issues for the same problem.
+          required: true
+        - label: I ran Health before filing this report.
+          required: true
