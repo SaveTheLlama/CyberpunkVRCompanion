@@ -1,0 +1,13 @@
+Cyberpunk VR Companion GitHub Missing Files Patch
+
+This patch contains ONLY public repository assets that were missing from the sanitized upload:
+- docs/images/logo_main.png
+- docs/images/launcher_auto_setup.png
+- docs/images/profile_editor.png
+- .github/ISSUE_TEMPLATE/bug_report.yml
+- .github/ISSUE_TEMPLATE/feature_request.yml
+- .github/ISSUE_TEMPLATE/config.yml
+- .gitignore
+
+Upload the CONTENTS of this folder to the repository root using GitHub -> Add file -> Upload files.
+The existing README paths will then resolve automatically.
