@@ -19,7 +19,7 @@
 - Includes Health Check and privacy-sanitized Diagnostic Pack tools.
 - Includes community profile import/export support.
 - Uses a true OpenXR/D3D11 stereo startup presentation when an HMD is available, with desktop fallback when it is not.
-- Includes uninstall and full-reset tools.
+- Includes normal uninstall and full-reset tools.
 
 ![Automatic setup](docs/images/launcher_auto_setup.png)
 
@@ -51,6 +51,29 @@ Typical environment:
 - Working PCVR/OpenXR runtime
 
 The Companion detects required components and reports missing items under **Automatic Setup** and **Health**.
+
+## Tested VR port
+
+Cyberpunk VR Companion v1.1.0 was developed and validated primarily with the **iPowerTech CyberpunkVR Port**:
+
+**[iPowerTech/cyberpunk-vr-port](https://github.com/iPowerTech/cyberpunk-vr-port)**
+
+That repository is a fork of the upstream **[dariulone/cyberpunk-vr-port](https://github.com/dariulone/cyberpunk-vr-port)** project.
+
+The VR port is a separate third-party project and is **not bundled with Cyberpunk VR Companion**. Follow the VR port project's current installation instructions and dependency requirements first, verify that Cyberpunk launches correctly in VR, and then install/use the Companion.
+
+Other compatible Cyberpunk VR configurations may work, but the iPowerTech port represents the primary environment used to validate Companion v1.1.0.
+
+## Uninstall / Full Reset
+
+Cyberpunk VR Companion includes two removal options:
+
+- **Normal uninstall** — removes the Companion while preserving the intended user data/state.
+- **FULL RESET** — removes Companion-managed state for a completely fresh Companion setup.
+
+Neither option removes Cyberpunk 2077, Cyber Engine Tweaks, RED4ext, the VR port, Virtual Desktop, or the user's OpenXR runtime.
+
+Use **FULL RESET** only when you intentionally want to return the Companion itself to a fresh-install state.
 
 ## VR / Flatscreen mode switcher
 
@@ -101,7 +124,7 @@ Cyberpunk VR Companion is intended to improve through user feedback.
 
 - Use a **Bug Report** when something that should work is reproducibly broken.
 - Use a **Feature Request** for a concrete improvement you would like considered.
-- Use **GitHub Discussions** for questions, profile/settings discussion, brainstorming, and early ideas once Discussions is enabled.
+- Use **GitHub Discussions** for questions, profile/settings discussion, brainstorming, and early ideas.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the community workflow.
 
@@ -123,4 +146,4 @@ See [RELEASE_NOTES_v1.1.0.md](RELEASE_NOTES_v1.1.0.md) and [CHANGELOG.md](CHANGE
 
 ## Disclaimer
 
-Cyberpunk VR Companion is an independent community utility and is not affiliated with, endorsed by, or sponsored by CD PROJEKT RED, Meta, Virtual Desktop, Valve, or the maintainers of third-party VR/mod frameworks. Product and company names are trademarks of their respective owners.
+Cyberpunk VR Companion is an independent community utility and is not affiliated with, endorsed by, or sponsored by CD PROJEKT RED, Meta, Virtual Desktop, Valve, iPowerTech, dariulone, or the maintainers of third-party VR/mod frameworks. Product and company names are trademarks of their respective owners.
