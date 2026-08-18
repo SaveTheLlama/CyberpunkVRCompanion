@@ -4,6 +4,27 @@ This guide explains the major functions of Cyberpunk VR Companion, what each one
 
 ---
 
+## Before you begin: tested VR port
+
+Cyberpunk VR Companion does not include or install a Cyberpunk VR port.
+
+Version 1.1.0 was developed and validated primarily with the **iPowerTech CyberpunkVR Port**:
+
+**[iPowerTech/cyberpunk-vr-port](https://github.com/iPowerTech/cyberpunk-vr-port)**
+
+That repository is a fork of the upstream **[dariulone/cyberpunk-vr-port](https://github.com/dariulone/cyberpunk-vr-port)** project.
+
+Before installing the Companion:
+
+1. Follow the VR port project's current README and dependency requirements.
+2. Install the VR port and its required dependencies.
+3. Verify that Cyberpunk launches correctly in VR.
+4. Then install Cyberpunk VR Companion.
+
+Other compatible Cyberpunk VR configurations may work, but the iPowerTech port is the primary environment used to validate Companion v1.1.0.
+
+---
+
 ## 1. Automatic Setup
 
 ### What it does
@@ -378,20 +399,35 @@ After import, review its metadata and compatibility before treating it as a reco
 
 For a new user:
 
-1. Install Cyberpunk VR Companion.
-2. Allow Automatic Setup to finish.
-3. Confirm the setup status is **READY** or resolve any reported item.
-4. Review **Current Settings (Auto-Detected)**.
-5. Review the four generated protected reference profiles.
-6. Start with **Balanced** unless you already know you want a different goal.
-7. Use **Launch VR**.
-8. If performance or image quality needs adjustment, duplicate the closest reference into a Custom profile.
-9. Use Assisted Tuning or edit the Custom profile.
-10. Run Health before performing manual repairs if something stops working.
+1. Install the VR port and its dependencies using the VR port project's own instructions.
+2. Verify that Cyberpunk launches correctly in VR before adding the Companion.
+3. Install Cyberpunk VR Companion.
+4. Allow Automatic Setup to finish.
+5. Confirm the setup status is **READY** or resolve any reported item.
+6. Review **Current Settings (Auto-Detected)**.
+7. Review the four generated protected reference profiles.
+8. Start with **Balanced** unless you already know you want a different goal.
+9. Use **Launch VR**.
+10. If performance or image quality needs adjustment, duplicate the closest reference into a Custom profile.
+11. Use Assisted Tuning or edit the Custom profile.
+12. Run Health before performing manual repairs if something stops working.
 
 ---
 
-## 15. General Safety Rules
+## 15. Uninstall / Full Reset
+
+Cyberpunk VR Companion includes two ways to remove/reset Companion-managed components:
+
+- **Normal uninstall** removes the Companion while preserving the intended user data/state.
+- **FULL RESET** clears Companion-managed state so a later installation behaves like a fresh Companion setup.
+
+Neither option removes Cyberpunk 2077, Cyber Engine Tweaks, RED4ext, the VR port, Virtual Desktop, or the user's OpenXR runtime.
+
+Use **FULL RESET** only when you deliberately want a fresh Companion state.
+
+---
+
+## 16. General Safety Rules
 
 - Fully exit Cyberpunk before switching between VR and Flatscreen.
 - Keep protected profiles as reference points.
