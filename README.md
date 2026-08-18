@@ -6,7 +6,7 @@
 
 ![Cyberpunk VR Companion](docs/images/logo_main.png)
 
-[Installation](INSTALLATION.md) · [User Guide](USER_GUIDE.md) · [Troubleshooting](TROUBLESHOOTING.md) · [Support](SUPPORT.md) · [Contributing](CONTRIBUTING.md) · [License](LICENSE.md)
+**[Download the latest release](https://github.com/SaveTheLlama/CyberpunkVRCompanion/releases/latest)** · [Installation](INSTALLATION.md) · [User Guide](USER_GUIDE.md) · [Troubleshooting](TROUBLESHOOTING.md) · [Support](SUPPORT.md) · [Security](SECURITY.md) · [Discussions](https://github.com/SaveTheLlama/CyberpunkVRCompanion/discussions) · [License](LICENSE.md)
 
 ## What it does
 
@@ -27,6 +27,8 @@
 
 ## One-click install
 
+**[Download the latest stable release from GitHub Releases](https://github.com/SaveTheLlama/CyberpunkVRCompanion/releases/latest).**
+
 Normal users should download only:
 
 `CyberpunkVRCompanionSetup.exe`
@@ -38,6 +40,20 @@ Then:
 3. Approve the Windows elevation prompt if requested.
 4. Setup detects the Cyberpunk installation, installs the Companion, creates shortcuts, and launches it.
 5. On first launch, Automatic Setup detects hardware/HMD/OpenXR and creates the local graphics baseline and reference profiles.
+
+### Windows security / download verification
+
+Cyberpunk VR Companion v1.1.0 is currently distributed as an **unsigned** Windows application. Windows may therefore display **Unknown Publisher** or a Microsoft Defender SmartScreen warning even when the file is the official release.
+
+Download the installer only from this repository's official **GitHub Releases** page. Each release provides a SHA-256 value and a `.sha256` sidecar file so the downloaded installer can be verified before running it.
+
+PowerShell example:
+
+```powershell
+Get-FileHash .\CyberpunkVRCompanionSetup.exe -Algorithm SHA256
+```
+
+Compare the returned value with the SHA-256 published for that release.
 
 ## Requirements
 
@@ -126,7 +142,7 @@ Cyberpunk VR Companion is intended to improve through user feedback.
 
 - Use a **Bug Report** when something that should work is reproducibly broken.
 - Use a **Feature Request** for a concrete improvement you would like considered.
-- Use **GitHub Discussions** for questions, profile/settings discussion, brainstorming, and early ideas.
+- Use **[GitHub Discussions](https://github.com/SaveTheLlama/CyberpunkVRCompanion/discussions)** for questions, profile/settings discussion, brainstorming, and early ideas.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the community workflow.
 
@@ -135,6 +151,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the community workflow.
 Start with **Health**. If more detail is needed, use **Diagnostics → Create Diagnostic Pack**.
 
 See [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+
+## Security
+
+Do not post credentials, private user information, or sensitive vulnerability details in a normal public Issue. Use GitHub Private Vulnerability Reporting when it is available for the repository.
+
+See [SECURITY.md](SECURITY.md) for the reporting policy.
 
 ## Privacy
 
@@ -151,6 +173,8 @@ The full application source is not part of the current public release. See [SOUR
 ## Release
 
 Current public release: **v1.1.0**
+
+**[Download the latest release](https://github.com/SaveTheLlama/CyberpunkVRCompanion/releases/latest)**
 
 See [RELEASE_NOTES_v1.1.0.md](RELEASE_NOTES_v1.1.0.md) and [CHANGELOG.md](CHANGELOG.md).
 
