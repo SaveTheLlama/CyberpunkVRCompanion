@@ -1,0 +1,79 @@
+name: Feature request
+description: Propose a concrete improvement to Cyberpunk VR Companion
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Cyberpunk VR Companion.
+        Please search existing Issues and Discussions before submitting so we can keep related ideas together.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Feature area
+      description: Which part of the Companion would this primarily affect?
+      options:
+        - Automatic Setup / Installation
+        - Launch VR / Smart Launch
+        - Graphics Profiles
+        - Profile Editor
+        - Hardware / Compatibility
+        - Assisted Tuning
+        - Community Profiles
+        - VR / Flatscreen Switcher
+        - Health / Diagnostics
+        - Stereo Startup / Visuals
+        - Import / Export
+        - User Interface
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: What would you like added or changed?
+      description: Describe the feature as clearly as possible.
+      placeholder: I would like the Companion to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem or inconvenience would this solve?
+      description: Explain why the feature would be useful during actual Cyberpunk VR use.
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: How would you expect it to work?
+      description: A rough user workflow is enough. Mockups or screenshots are welcome when useful.
+      placeholder: "Example: Open Profiles → choose X → Companion does Y..."
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: When would you use this feature?
+      description: Give a real example if possible.
+
+  - type: dropdown
+    id: tester
+    attributes:
+      label: Would you be willing to test an experimental build?
+      options:
+        - "Yes"
+        - "Maybe"
+        - "No"
+
+  - type: checkboxes
+    id: duplicates
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing Issues and Discussions for a similar request.
+          required: true
