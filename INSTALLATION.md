@@ -1,5 +1,19 @@
 # Installation
 
+## Before installing the Companion
+
+Cyberpunk VR Companion does not install or redistribute a Cyberpunk VR port.
+
+Cyberpunk VR Companion v1.1.0 was developed and validated primarily with:
+
+**[iPowerTech/cyberpunk-vr-port](https://github.com/iPowerTech/cyberpunk-vr-port)**
+
+This is a fork of the upstream **[dariulone/cyberpunk-vr-port](https://github.com/dariulone/cyberpunk-vr-port)** project.
+
+Follow the VR port project's **current** README, dependency list, and installation instructions. Install the VR port and its required dependencies first, then verify that Cyberpunk launches correctly in VR before installing the Companion.
+
+The VR port is a separate third-party project and is not bundled with Cyberpunk VR Companion.
+
 ## Recommended public install
 
 1. Download `CyberpunkVRCompanionSetup.exe`.
@@ -19,11 +33,16 @@ First launch detects GPU/HMD/OpenXR, captures the user's current graphics baseli
 
 Run the latest setup EXE over the existing installation.
 
-## Uninstall
+## Uninstall / Full Reset
 
-Use the normal Companion uninstaller to preserve intended user data, or the clearly labeled **FULL RESET** option for a complete Companion reset.
+Cyberpunk VR Companion includes two removal paths:
 
-The Companion uninstaller does not remove Cyberpunk 2077, CET, RED4ext, the VR port, Virtual Desktop, or the user's OpenXR runtime.
+- **Normal uninstall** — removes the Companion while preserving the intended user data/state.
+- **FULL RESET** — removes Companion-managed state so the next installation behaves like a completely fresh Companion setup.
+
+The Companion removal tools do **not** remove Cyberpunk 2077, Cyber Engine Tweaks, RED4ext, the VR port, Virtual Desktop, or the user's OpenXR runtime.
+
+Use **FULL RESET** only when you deliberately want to clear the Companion's managed state for troubleshooting, testing, or a fresh reinstall.
 
 ## Using the VR / Flatscreen switcher
 
